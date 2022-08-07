@@ -50,7 +50,7 @@ The code has been tested on
 
 * Ubuntu 18.04 with ROS Melodic
 * Ubuntu 20.04 with ROS Noetic
-
+* Ubuntu 16.04 with ROS Kinetic(trying)
 ### Install dependences
 
 Install [catkin tools](https://catkin-tools.readthedocs.io/en/latest/installing.html) and [vcstools](https://github.com/dirk-thomas/vcstool) if you haven't done so before. Depending on your operating system, run
