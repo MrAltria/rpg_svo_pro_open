@@ -72,7 +72,7 @@ sudo apt-get install libblas-dev liblapack-dev libsuitesparse-dev
 Create a workspace and clone the code (`ROS-DISTRO`=`melodic`/`noetic`):
 ```sh
 mkdir -p svo_ws && cd svo_ws
-catkin config --init --mkdirs --extend /opt/ros/kinetic --cmake-args -DCMAKE_BUILD_TYPE=Release -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3
+#catkin config --init --mkdirs --extend /opt/ros/kinetic --cmake-args -DCMAKE_BUILD_TYPE=Release -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3
 mkdir -p src && cd src
 git clone https://github.com/MrAltria/rpg_svo_pro_open.git
 vcs-import < ./rpg_svo_pro_open/dependencies.yaml
