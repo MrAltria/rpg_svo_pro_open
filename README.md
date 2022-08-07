@@ -47,7 +47,7 @@ Our recent publications that use SVO Pro are:
 ## Install
 
 The code has been tested on
-* Ubuntu 16.04 with ROS Kinetic(altria try it possible)
+* Ubuntu 16.04 with ROS Kinetic(altria try it possible!!)
 ### Install dependences
 
 Install [catkin tools](https://catkin-tools.readthedocs.io/en/latest/installing.html) and [vcstools](https://github.com/dirk-thomas/vcstool) if you haven't done so before. Depending on your operating system, run
@@ -73,7 +73,7 @@ Create a workspace and clone the code (`ROS-DISTRO`=`melodic`/`noetic`):
 ```sh
 mkdir svo_ws && cd svo_ws
 # see below for the reason for specifying the eigen path
-catkin config --init --mkdirs --extend /opt/ros/<ROS-DISTRO> --cmake-args -DCMAKE_BUILD_TYPE=Release -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3
+catkin config --init --mkdirs --extend /opt/ros/kinetic --cmake-args -DCMAKE_BUILD_TYPE=Release -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3
 cd src
 git clone https://github.com/MrAltria/rpg_svo_pro_open.git
 vcs-import < ./rpg_svo_pro_open/dependencies.yaml
