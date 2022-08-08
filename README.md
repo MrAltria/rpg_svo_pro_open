@@ -72,12 +72,11 @@ sudo apt-get install libblas-dev liblapack-dev libsuitesparse-dev
 Create a workspace and clone the code (`ROS-DISTRO`=`melodic`/`noetic`):
 ```sh
 mkdir -p svo_ws && cd svo_ws
-#catkin config --init --mkdirs --extend /opt/ros/kinetic --cmake-args -DCMAKE_BUILD_TYPE=Release -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3
-mkdir -p src && cd src
+catkin config --init --mkdirs --extend /opt/ros/kinetic --cmake-args -DCMAKE_BUILD_TYPE=Release -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3
+cd src
 git clone https://github.com/MrAltria/rpg_svo_pro_open.git
 vcs-import < ./rpg_svo_pro_open/dependencies.yaml
 touch minkindr/minkindr_python/CATKIN_IGNORE
-# vocabulary for place recognition
 cd rpg_svo_pro_open/svo_online_loopclosing/vocabularies && ./download_voc.sh
 cd ../../../..
 ```
@@ -85,7 +84,7 @@ There are two types of builds that you can proceed from here
 1. Build without the global map (**front-end + sliding window back-end + loop closure/pose graph**)
 
    ```sh
-   catkin_make -j6
+   catkin build -j6
    ```
 
    
