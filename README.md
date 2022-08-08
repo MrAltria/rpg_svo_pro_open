@@ -105,7 +105,7 @@ There are two types of builds that you can proceed from here
     Second, clone GTSAM
 
     ```sh
-    git clone --branch 4.0.3 https://github.com/borglab/gtsam.git
+    git clone --branch 4.0.3 https://github.com/MrAltria/gtsam.git
     ```
 
     and modify GTSAM compilation flags a bit:
